@@ -20,14 +20,14 @@ palavra = input("Digite uma palavra: ")
 print(f"\nA palavra '{palavra}' tem {len(palavra)} caracteres:")
 
 for letra in palavra:
-    print(letra)
+    print(letra.index)
 
 '''
 
 ##################################################
 # 2: Controle de fluxo no For (Demonstra break e continue)
 ##################################################
-'''
+
 print("Números pares de 1 a 20 (para no 16):")
 
 for num in range(1, 21):
@@ -40,4 +40,3 @@ for num in range(1, 21):
     
     print(num)
 
-'''
