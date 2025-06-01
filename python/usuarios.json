@@ -10,5 +10,11 @@
         "nome": "Maria da Silva",
         "email": "maria@gmail.com",
         "idade": 22
+    },
+    {
+        "id": 3,
+        "nome": "Lucas",
+        "email": "lucas@gmail.com",
+        "idade": 34
     }
 ]

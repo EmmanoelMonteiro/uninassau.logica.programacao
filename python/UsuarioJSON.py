@@ -60,10 +60,10 @@ def print_usuarios(usuarios):
     if not usuarios:
         print('Nenhum usuário encontrado.')
         return
-    print(f"{'ID':<5}{'Nome':<20}{'Email':<30}{'Idade':<6}")
-    print('-' * 61)
+    print(f"{'ID':<5}{'Nome':<20}{'Email':<30}{'Idade':<6}{'Ano':<6}")
+    print('-' * 67)
     for u in usuarios:
-        print(f"{u['id']:<5}{u['nome']:<20}{u['email']:<30}{u['idade']:<6}")
+        print(f"{u['id']:<5}{u['nome']:<20}{u['email']:<30}{u['idade']:<6}{u['ano']:<6}")
 
 
 def menu():
@@ -96,7 +96,8 @@ def main():
                     'id': max((u['id'] for u in usuarios), default=0) + 1,
                     'nome': input('Nome: ').strip(),
                     'email': input('Email: ').strip(),
-                    'idade': int(input('Idade: ').strip())
+                    'idade': int(input('Idade: ').strip()),
+                    'ano': int(input('Ano: ').strip())
                 }
             except ValueError:
                 print('Entrada inválida. Tente novamente.')
